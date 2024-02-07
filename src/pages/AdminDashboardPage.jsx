@@ -66,8 +66,8 @@ const AdminDashboardPage = () => {
               </div>
           </div>
 
-          <div className="container px-4 mx-auto flex justify-between items-center capitalize mt-[20px] text-sm text-white mb-3">
-              <span className="w-[500px]">
+          <div className="container px-4 mx-auto flex text-gray-400 justify-between items-center capitalize mt-[20px] text-sm  mb-3">
+              <span className="w-[500px] ">
                   # &nbsp; &nbsp;
                   Title
               </span>
@@ -82,10 +82,10 @@ const AdminDashboardPage = () => {
           {data?.length > 0 ? (
               <>
                   {data?.map((item) => (
-                      <div key={item?.id} className="container mx-auto flex justify-between items-center p-4 border capitalize mt-[20px] text-sm text-white mb-3">
-                          <span className="flex w-[500px] items-center justify-between gap-2">
-                              <span>
-                                  {item?.id}</span> &nbsp; &nbsp;
+                      <div key={item?.id} className="container mx-auto flex justify-between items-center p-4 border capitalize mt-[20px] text-sm text-gray-400 mb-3 border-gray-500">
+                          <span className="flex w-[500px] items-center justify-around gap-2">
+                              {/* <span>
+                                  {item?.id}</span> &nbsp; &nbsp; */}
                               <span>
                                   {item?.photo && (
                                       <img
@@ -95,7 +95,7 @@ const AdminDashboardPage = () => {
                                       />
                                   )}
                               </span>
-                              <span className="font-extralight text-sm">
+                              <span className="font-extralight text-sm w-[300px]">
                                   {item?.title}
                               </span>
                           </span>
