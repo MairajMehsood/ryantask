@@ -85,8 +85,11 @@ const AdminDashboardPage = () => {
                       <div key={item?.id} className="container mx-auto flex justify-between items-center p-4 border capitalize mt-[20px] text-sm text-gray-400 mb-3 border-gray-500">
                           <span className="flex w-[500px] items-center justify-around gap-2">
                               {/* <span>
-                                  {item?.id}</span> &nbsp; &nbsp; */}
+                                  {item?.id}</span> &nbsp; &nbsp;sassas */}
                               <span>
+
+
+
                                   {item?.photo && (
                                       <img
                                           src={item?.photo}
