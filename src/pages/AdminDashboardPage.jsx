@@ -24,6 +24,7 @@ const AdminDashboardPage = () => {
             "page": page,
             "limit": 10
         }
+        
         let newData = await sdk.callRestAPI(body, 'PAGINATE')
         if(newData){
             console.log('data', newData)
